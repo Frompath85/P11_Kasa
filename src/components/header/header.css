@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  header li {
+    text-decoration: none;
+    color:#FF6060;
+    list-style-type: none;
+    font-size: 24px;
+  }
+  header ul{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+  }
