@@ -1,10 +1,10 @@
-import React from 'react'
+import "./banner.css"
 
-export default function Banner() {
+export default function Banner(props) {
   return (
-    <div>
-        <img src="./src/assets/logo banner.png" alt="" />
-        <h1>Chez vous, partout et ailleurs</h1>
-    </div>
+    <section className="banner">
+        <img src={props.src} alt="image banner" />
+        <h1> {props.title} </h1>
+    </section>
   )
 }
