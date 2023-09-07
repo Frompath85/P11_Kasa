@@ -2,16 +2,24 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    padding: 50px 80px 0px 80px;
   }
-  header li {
+  header li{
+    list-style-type: none;
+    
+  }
+  header a {
     text-decoration: none;
     color:#FF6060;
-    list-style-type: none;
     font-size: 24px;
+    font-weight: 500;
+    text-underline-offset: 5px;
   }
   header ul{
     display: flex;
     justify-content: space-between;
     width: 250px;
+  }
+  .active{
+    text-decoration: underline;
   }
