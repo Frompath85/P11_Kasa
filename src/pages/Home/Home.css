@@ -1,0 +1,12 @@
+.SectionCard{
+    background :#F6F6F6;
+    z-index: -1;
+    position: relative;
+    margin: 0px 80px;
+    padding: 40px ;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 340px);
+    justify-content: space-evenly;
+    gap: 40px;
+}
