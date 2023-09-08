@@ -1,0 +1,17 @@
+h1{
+    font-size: 288px;
+    color: #FF6060;
+    text-align: center;
+    margin : 100px 0px 50px 0px
+}
+p{
+    font-size: 36px;
+    color: #FF6060;
+    text-align: center;
+}
+.LinkHomePage{
+    font-size: 18px;
+    color: #FF6060;
+    text-align: center;
+    display: block;
+}
