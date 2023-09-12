@@ -1,0 +1,32 @@
+.Carrousel{
+    height: 415px;
+    padding: 30px 80px 0px 80px;
+    position: relative;
+}
+.LogementImage{
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.ChevronNext{
+    position: absolute;
+    top: 200px;
+    right: 80px;
+    background-color: transparent;
+    border: none;
+}
+.ChevronBack{
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    background-color: transparent;
+    border: none;
+}
+.NumberPage{
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+}
