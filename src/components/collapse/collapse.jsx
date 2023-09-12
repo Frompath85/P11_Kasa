@@ -1,12 +1,10 @@
 import "./collapse.css";
 import React from "react";
 import { useState } from "react";
+import ChevronUp from "../../assets/arraw_up.png"
+import ChevronDown from "../../assets/arraw_down.png"
 
 export default function Collapse(props) {
-
-  const ChevronUp = "./src/assets/arraw_up.png";
-  const ChevronDown = "./src/assets/arraw_down.png";
-
   const [isactive, setActive] = useState(false);
 
   return (
