@@ -1,7 +1,5 @@
 .SectionCard{
     background :#F6F6F6;
-    z-index: -1;
-    position: relative;
     margin: 0px 80px;
     padding: 40px ;
     border-radius: 25px;
