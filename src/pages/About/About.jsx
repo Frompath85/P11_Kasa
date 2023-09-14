@@ -30,7 +30,7 @@ export default function About() {
     <>
       <Header />
       <Banner src={sourcebanner} />
-      <section className="CollapseSection">
+      <section className="CollapseSectionAbout">
         {DataCollapse.map((data) => {
           return (
             <Collapse key={data.id} title={data.title} content={data.content} />
