@@ -8,7 +8,7 @@ export default function Collapse(props) {
   const [isactive, setActive] = useState(false);
 
   return (
-    <article className="Collapse">
+     <article className="Collapse">
       <div className="CollapseTitle" onClick={() => { setActive(!isactive); }} >
         <p>{props.title}</p>
         {
@@ -18,7 +18,16 @@ export default function Collapse(props) {
       <div
         className={isactive ? "CollapseContentActive" : "CollapseContentHidden"}
       >
-        <p className="CollapseContent">{props.content}</p>
+        {/* // je test si c'est un pragraphe ou une liste */
+        
+        Array.isArray(props.content) ? props.content.map((item, index) => {
+          return (
+              <p className="ListContent" key={index}>{item}</p>
+          )
+      }) :  <p className="CollapseContent">{props.content}</p>
+        
+        }
+        
       </div>
     </article>
   );
