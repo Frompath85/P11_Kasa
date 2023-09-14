@@ -12,6 +12,7 @@ padding: 30px 80px 0px 80px;
     font-size: 36px;
     font-weight: 500;
     margin: 0px;
+    text-align: left;
 }
 .Title-div p{
     font-size: 18px;
@@ -43,10 +44,4 @@ padding: 20px 80px 0px 80px;
 .rating-div{
     display: flex;
     gap: 10px;
-}
-.Collapse{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px 80px 0px 80px;
 }

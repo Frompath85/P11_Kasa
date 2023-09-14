@@ -19,6 +19,8 @@ export default function Logement() {
     (data) => data.id === id
 );
 
+console.log(Logement.equipments)
+
 const ListeTags = Logement.tags;
 
 const NbreEtoiles = parseInt(Logement.rating)
@@ -64,8 +66,12 @@ const ArrayStar =[1,2,3,4,5];
 
       </section>
 
-      <section className="Collapse">
-      <Collapse key={Logement.id} title={Logement.description} content={Logement.equipments} />
+      <section className="CollapseSectionLogement">
+
+      <Collapse key={`Desc${Logement.id}`} title="Description" content={Logement.description} />
+
+      <Collapse key={`equip${Logement.id}`} title="Equipements" content={Logement.equipments} />
+
       </section>
       
       <Footer />
