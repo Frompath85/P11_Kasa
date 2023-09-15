@@ -1,15 +1,21 @@
 footer {
-    width: 100%;
+    width: auto;
     height: 100px;
     background-color: black;
     padding: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 80px;
   }
   footer p{
     color: white;
     font-size: 24px;
     margin: 30px 0px 10px 0px;
+  }
+
+  @media screen and (max-width: 768px) {
+    footer p{
+      font-size: 12px;
+    }
   }

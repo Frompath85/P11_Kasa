@@ -30,3 +30,38 @@
     top: 400px;
     left: 50%;
 }
+
+@media screen and (max-width: 768px ){
+.Carrousel{
+    padding: 20px 20px 0px 20px;
+    height: 255px;
+}
+.LogementImage{
+    height: 255px;
+}
+.ChevronNext{
+    top: 135px;
+    right: 20px;
+   
+}
+.ChevronNext img{
+     width: 24px;
+    height: 24px;
+}
+.ChevronBack{
+    top: 135px;
+    left: 20px;
+}
+.ChevronBack img{
+    width: 24px;
+    height: 24px;
+}
+.NumberPage {
+    top: 233px;
+    left: 48%;
+    font-size: 14px;
+}
+
+
+}
+    

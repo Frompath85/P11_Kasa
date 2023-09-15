@@ -11,3 +11,10 @@
     margin-right: 10px;
 
 }
+@media screen and (max-width: 768px ){
+    .tag{
+        font-size: 10px;
+        height: 18px;
+        min-width: 100px;
+    }
+}

@@ -20,3 +20,16 @@
     top: 280px;
     width: 300px;
 }
+@media screen and (max-width: 768px) {
+    .Card {
+        height: 255px;
+        width: 100%; 
+    }
+    .Card img{
+        height: 255px;
+         width: 100%; 
+    }
+    .Card figcaption{
+        top: 205px;
+    }
+}
