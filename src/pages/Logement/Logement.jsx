@@ -19,7 +19,7 @@ export default function Logement() {
     (data) => data.id === id
 );
 
-console.log(Logement.equipments)
+//console.log(Logement.pictures)
 
 const ListeTags = Logement.tags;
 
@@ -29,22 +29,15 @@ const ArrayStar =[1,2,3,4,5];
   return (
     <>
       <Header />
-      <Slider picture = {Logement.cover}/>
+      
+      <Slider picture = {Logement.cover} AllPictures={Logement.pictures}/>  
 
-      <section className="description">
+    <section className="Logement-div">
+      <section className="description-and-tag">
         <div className="Title-div">
           <h1> {Logement.title}</h1>
           <p> {Logement.location} </p>
         </div>
-        <div className="Author-div">
-          <p>{Logement.host.name}</p>
-          <img src= {Logement.host.picture} alt="" />
-        </div>
-      
-      </section>
-      
-      <section className="tag-and-rating">
-
         <div className="tag-div">
           {
             ListeTags.map((data, index) => {
@@ -53,19 +46,24 @@ const ArrayStar =[1,2,3,4,5];
               );
             })
           }
+        </div>      
+      </section>
+      
+      <section className="Author-and-rating">
+        <div className="Author-div">
+            <p>{Logement.host.name}</p>
+            <img src= {Logement.host.picture} alt="" />
         </div>
-
         <div className="rating-div" >
           {          
             ArrayStar.map(ele =>{
               return ele <= NbreEtoiles ? <img key={ele} src = {StarActive} alt="star active" /> : <img key={ele} src ={StarInactive} alt="star inactive" />;
-              }
+                }
             )
           }
         </div>
-
       </section>
-
+    </section>
       <section className="CollapseSectionLogement">
 
       <Collapse key={`Desc${Logement.id}`} title="Description" content={Logement.description} />
