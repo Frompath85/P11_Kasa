@@ -15,6 +15,7 @@
     right: 80px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .ChevronBack{
     position: absolute;
@@ -22,6 +23,7 @@
     left: 80px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .NumberPage{
     font-size: 18px;
