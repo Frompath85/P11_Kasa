@@ -6,27 +6,31 @@ import StarActive from "../../assets/StarActive.png"
 import StarInactive from "../../assets/StarInactive.png"
 import Collapse from "../../components/collapse/collapse";
 import "./Logement.css"
+import NotFoundPage from '../NotFoundPage/NotFoundPage'
 
 import logements from "/logements.json"
 import { useParams } from "react-router-dom";
+
 
 
 export default function Logement() {
 
      //je recupère le id de l'article selectionné
   const {id}= useParams();
-  let Logement = logements.find(
+  const Logement = logements.find(
     (data) => data.id === id
 );
 
-//console.log(Logement.pictures)
-
-const ListeTags = Logement.tags;
-
-const NbreEtoiles = parseInt(Logement.rating)
+let ListeTags = "";
+let  NbreEtoiles ="";
 const ArrayStar =[1,2,3,4,5];
 
-  return (
+if(Logement){
+ListeTags = Logement.tags;
+ NbreEtoiles = parseInt(Logement.rating)
+}
+
+  return Logement ? (
     <>
       <Header />
       
@@ -74,5 +78,7 @@ const ArrayStar =[1,2,3,4,5];
       
       <Footer />
     </>
+  ) : (
+    <NotFoundPage />
   )
 }

@@ -49,6 +49,8 @@ padding: 20px 80px 0px 80px;
 }
 .tag-div{
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 .rating-div{
     display: flex;
